@@ -8,7 +8,7 @@ export const JobListings = ({ isHome = false }: Props) => {
     const [loading, setLoading] = useState<boolean>(true);
 
     useEffect(() => {
-        const uri = isHome ? 'http://localhost:8000/jobs?_limit=3' : 'http://localhost:8000/jobs';
+        const uri = isHome ? '/api/jobs?_limit=3' : '/api/jobs';
         const fetchJobs = async () => {
             try {
                 const res = await fetch(uri, { method: 'GET' });
@@ -50,5 +50,5 @@ export const JobListings = ({ isHome = false }: Props) => {
 }
 
 type Props = {
-    isHome: boolean
+    isHome?: boolean
 }
