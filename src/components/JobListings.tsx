@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Listing } from './Listing';
 import { Loader } from './Loader';
-
+//nessa página foi usada o fetch normal, que carrega os dados durante a renderização da página
 export const JobListings = ({ isHome = false }: Props) => {
 
     const [jobs, setJobs] = useState<any>([]);
