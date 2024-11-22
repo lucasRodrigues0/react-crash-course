@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { createNewJob } from "../../service/Service";
+import { useNavigate } from "react-router-dom";
 
 export const AddJobPage = () => {
 
@@ -13,8 +14,9 @@ export const AddJobPage = () => {
     const [contactEmail, setContactEmail] = useState('');
     const [contactPhone, setContactPhone] = useState('');
 
-    const submitForm = (e: any) => {
-        e.preventDefault();
+    const navigate = useNavigate();
+
+    const submitForm = () => {
         const body = {
             title,
             type,
@@ -29,6 +31,7 @@ export const AddJobPage = () => {
             }
         }
         createNewJob(body);
+        navigate('/jobs');
     }
 
     return (

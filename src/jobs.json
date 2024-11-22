@@ -97,6 +97,34 @@
         "contactEmail": "managers@vortex.com",
         "contactPhone": "999-999-9999"
       }
+    },
+    {
+      "id": "6b6f",
+      "title": "Front-end internship",
+      "type": "Internship",
+      "description": "\"Hooray! Your opportunity may be knocking on your door!\\nWe need a CS student, at least at the 3rd semester, with basic knowlege of html, css, javascript, typescript and React.\\nFor this internship the candidate must be collaborative (he will be working with other interns), driven to team-work and eager to learn.\\nWe don't offer any benefits. You already are going to be paid, so no complainings.",
+      "salary": "Under $50K",
+      "location": "Bangladesh",
+      "company": {
+        "name": "Kazakhstan Software",
+        "description": "We build software like no one else in the world. The best engineers and software architects you are going to find aren't available in the market, THEY ARE HERE. All the other companies are shit.",
+        "contactEmail": "boom@kazak.com",
+        "contactPhone": "000-000-0000"
+      }
+    },
+    {
+      "id": "5df2",
+      "title": "Front-end internship",
+      "type": "Full-Time",
+      "description": "Hooray! Your opportunity may be knocking on your door!\\\\nWe need a CS student, at least at the 3rd semester, with basic knowlege of html, css, javascript, typescript and React.\\\\nFor this internship the candidate must be collaborative (he will be working with other interns), driven to team-work and eager to learn.\\\\nWe don't offer any benefits. You already are going to be paid, so no complainings.",
+      "salary": "Under $50K",
+      "location": "Bangladesh",
+      "company": {
+        "name": "Kazakhstan Software",
+        "description": "We build software like no one else in the world. The best engineers and software architects you are going to find aren't available in the market, THEY ARE HERE. All the other companies are shit.",
+        "contactEmail": "boom@kazak.com",
+        "contactPhone": "000-000-0000"
+      }
     }
   ]
 }

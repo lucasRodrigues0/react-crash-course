@@ -13,7 +13,7 @@ export const JobListings = ({ isHome = false }: Props) => {
             try {
                 const res = await fetch(uri, { method: 'GET' });
                 const data = await res.json();
-                setJobs(data);
+                setJobs(data.reverse());
             } catch (error) {
                 console.log('error', error);
             } finally {
