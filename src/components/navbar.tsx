@@ -33,7 +33,7 @@ export const Navbar = () => {
                                         className={activeStyle}
                                     >Jobs</NavLink>
                                     <NavLink
-                                        to={'*'}
+                                        to={'/add-new'}
                                         className={activeStyle}
                                     >Add Job</NavLink>
                                 </div>
