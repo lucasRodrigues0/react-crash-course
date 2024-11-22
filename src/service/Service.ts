@@ -6,12 +6,9 @@ export const getJobById = async ({ params }: any) => {
 }
 
 export const createNewJob = async (reqBody: any) => {
-    
-    const res = await fetch('/api/jobs', {
+
+    await fetch('/api/jobs', {
         method: 'POST',
         body: JSON.stringify(reqBody)
     });
-
-    const data = await res.json();
-    console.log(data);
 }
