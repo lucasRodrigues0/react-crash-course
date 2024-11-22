@@ -83,6 +83,20 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "777-777-7777"
       }
+    },
+    {
+      "id": "8096",
+      "title": "Senior UX designer",
+      "type": "Remote",
+      "description": "Looking for a senior UX-designer lorem ipsum etc",
+      "salary": "$150K - $175K",
+      "location": "Tampa Bay",
+      "company": {
+        "name": "Vortex solutions",
+        "description": "A company that does nothing",
+        "contactEmail": "managers@vortex.com",
+        "contactPhone": "999-999-9999"
+      }
     }
   ]
 }

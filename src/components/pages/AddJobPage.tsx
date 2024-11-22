@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { createNewJob } from "../../service/Service";
 
 export const AddJobPage = () => {
 
@@ -27,7 +28,7 @@ export const AddJobPage = () => {
                 contactPhone
             }
         }
-        console.log(body);
+        createNewJob(body);
     }
 
     return (
