@@ -1,10 +1,22 @@
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, useLoaderData, useNavigate } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa6";
-import {FaMapMarker} from 'react-icons/fa';
+import { FaMapMarker } from 'react-icons/fa';
+import { deleteJob } from "../../service/Service";
 //nessa página foi usada a função do loader do react router dom, carregando os dados antes de renderizar a página
 export const JobPage = () => {
 
     const job: any = useLoaderData();
+
+    const navigate = useNavigate();
+
+    const callDelete = () => {
+        const confirm = window.confirm('Are you sure you want to delete this job ?');
+        if (!confirm) {
+            return;
+        }
+        deleteJob(job.id);
+        navigate('/jobs');
+    }
 
     return (
         <>
@@ -84,6 +96,7 @@ export const JobPage = () => {
                                 >Edit Job</a>
                                 <button
                                     className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
+                                    onClick={callDelete}
                                 >
                                     Delete Job
                                 </button>

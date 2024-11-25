@@ -12,3 +12,11 @@ export const createNewJob = async (reqBody: any) => {
         body: JSON.stringify(reqBody)
     });
 }
+
+export const deleteJob = async (id: number) => {
+
+    await fetch(`/api/jobs/${id}`, {
+        method: 'DELETE'
+    })
+
+}
