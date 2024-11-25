@@ -6,6 +6,7 @@ import { JobsPage } from "./components/pages/JobsPage";
 import { JobPage } from "./components/pages/JobPage";
 import { getJobById } from "./service/Service";
 import { AddJobPage } from "./components/pages/AddJobPage";
+import { EditJobPage } from "./components/pages/EditJobPage";
 
 export const router = createBrowserRouter([
     {
@@ -40,6 +41,15 @@ export const router = createBrowserRouter([
                 <AddJobPage />
             </MainLayout>
         )
+    },
+    {
+        path: '/edit/:id',
+        element: (
+            <MainLayout>
+                <EditJobPage />
+            </MainLayout>
+        ),
+        loader: getJobById
     },
     {
         path: '*',

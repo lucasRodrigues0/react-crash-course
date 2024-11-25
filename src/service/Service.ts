@@ -20,3 +20,10 @@ export const deleteJob = async (id: number) => {
     })
 
 }
+
+export const updateJob = async (reqBody: any) => {
+    await fetch(`/api/jobs/${reqBody.id}`, {
+        method: 'PUT',
+        body: JSON.stringify(reqBody)
+    });
+}
