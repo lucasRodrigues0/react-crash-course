@@ -1,4 +1,4 @@
-import { JobListings } from "../JobListings";
+import { JobListings } from "../shared/JobListings";
 
 export const JobsPage = () => {
 
