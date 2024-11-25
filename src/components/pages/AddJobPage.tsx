@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { createNewJob } from "../../service/Service";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 export const AddJobPage = () => {
 
@@ -30,6 +31,7 @@ export const AddJobPage = () => {
             }
         }
         createNewJob(body);
+        toast.success('Job added successfully!');
         navigate('/jobs');
     }
 
@@ -66,7 +68,7 @@ export const AddJobPage = () => {
                                 id="title"
                                 name="title"
                                 className="border rounded w-full py-2 px-3 mb-2"
-                                placeholder="eg. Beautiful Apartment In Miami"
+                                placeholder="eg. Software Developer"
                                 value={title}
                                 onChange={(e) => setTitle(e.target.value)}
                                 required
@@ -81,7 +83,6 @@ export const AddJobPage = () => {
                                 id="description"
                                 name="description"
                                 className="border rounded w-full py-2 px-3"
-                                // rows="4"
                                 placeholder="Add any job duties, expectations, requirements, etc"
                                 value={description}
                                 onChange={(e) => setDescription(e.target.value)}
